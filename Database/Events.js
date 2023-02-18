@@ -1,4 +1,4 @@
-const Event = require('..Models/EventDetails.js');
+ const Event = require('..Models/EventDetails.js');
 
 const eventData = [
     {
@@ -106,3 +106,7 @@ Event.create(eventData, (error, event) => {
     console.log('Event created successfully:', event);
   }
 });
+
+
+
+
