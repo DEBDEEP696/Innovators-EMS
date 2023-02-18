@@ -8,6 +8,7 @@
   </head>
   <body>
       <h1>Event Management SignUp Form</h1>
+      <img class="hero" src="ems.jpg" alt="">
       <form class="" action="login.html" method="post">
         <input type="text" name="participant_name" placeholder="Enter your name" value="" required><br>
         <input type="email" pattern=".+@gmail\.com" title="Please provide a valid Gmail address" name="participant_email" placeholder="Your email id" value="" required><br>
@@ -38,6 +39,21 @@
 
       </form>
       <span id="msg"></span>
+      <script>
+        const msg = document.getElementById("msg")
 
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Thankyou for Registering!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>

@@ -13,6 +13,22 @@
       <input type="password" class="password" name="password" placeholder="Enter your password" value="" required><br>
       <button type="submit" name="button">Login</button>
     </form>
-    <script src="index.js" charset="utf-8"></script>
+    <span id="msg"></span>
+    <script>
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Thankyou for Registering!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
