@@ -13,41 +13,40 @@
         <div style = "padding: 20px;">
             <form class="form-group" style = "height: 400px;  width: 450px; overflow-y: scroll;">
                <label for="event_id">Event ID</label><br>
-               <input type = "text" class = "form-control" id = "event_id" placeholder="Event ID"><br>
+               <input type = "text" class = "form-control" id = "event_id" placeholder="Event ID" required><br>
    
                <label for="event_name">Event name</label><br>
-               <input type = "text" class = "form-control" id = "event_name" placeholder="Event name"><br>
+               <input type = "text" class = "form-control" id = "event_name" placeholder="Event name" required><br>
    
                <label for="event_date">Event date</label><br>
-               <input type = "date" class = "form-control" id = "event_date" placeholder="Event date"><br>
+               <input type = "date" class = "form-control" id = "event_date" placeholder="Event date" required><br>
    
                <label for="organiser_mail">Organiser mail</label><br>
-               <input type = "email" class = "form-control" id = "organiser_mail"  placeholder="mail"><br>
+               <input type = "email" class = "form-control" id = "organiser_mail"  placeholder="mail" required><br>
    
                <label for="organiser_phone">Organiser Contact</label><br>
-               <input type = "text" class = "form-control" id = "organiser_phone" placeholder="phone"><br>
+               <input type = "text" class = "form-control" id = "organiser_phone" placeholder="phone" required><br>
    
                <label for="Event Description">Event Description</label><br>
                <textarea id = "Event Description" class = "form-control" rows="4" cols="21" placeholder="Describe about event"></textarea><br>
    
                <label for="event_type">Event Type</label><br>
-               <select name = "event_type" id="Event type" class = "form-control">
+               <select name = "event_type" id="Event type" class = "form-control" required>
                    <option value="On-Premise" >On-Premise</option>
                    <option value="Virtual" >Virtual</option>
                </select><br>
    
                <label for="event_location">Organiser Contact</label><br>
-               <input type = "text" id = "event_location" class = "form-control" placeholder="online Platform / City"><br>
+               <input type = "text" id = "event_location" class = "form-control" placeholder="online Platform / City" required><br>
    
                <label for="event_status">Event Status</label><br>
-               <select name = "event_status" class = "form-control" id="Event Status">
+               <select name = "event_status" class = "form-control" id="Event Status" required>
                    <option value="Live" >Live</option>
                    <option value="Scheduled" >Scheduled</option>
-                   <option value="Cancelled" >Cancelled</option>
                </select><br>
    
                <label for="max_seats">Max Seats</label><br>
-               <input type = "number" class = "form-control" id = "max_seats" placeholder="max seats"><br>
+               <input type = "number" class = "form-control" id = "max_seats" placeholder="max seats" required><br>
                
                <input class = "btn btn-primary" type = "button" value = "Submit">
             </form>
