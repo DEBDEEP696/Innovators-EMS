@@ -1,0 +1,18 @@
+{
+  "name": "evetmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Team innovator",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.2"
+  }
+}
